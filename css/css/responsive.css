@@ -1,0 +1,212 @@
+/* Планшеты */
+@media screen and (max-width: 1024px) {
+    .section-container {
+        padding: 0 1.5rem;
+    }
+
+    .hero h2 {
+        font-size: 2.8rem;
+    }
+
+    .stats-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .price-cards {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+}
+
+/* Мобильные устройства */
+@media screen and (max-width: 768px) {
+    /* Меню */
+    .nav-links {
+        position: fixed;
+        right: -100%;
+        top: 80px;
+        flex-direction: column;
+        background: rgba(15, 23, 42, 0.95);
+        backdrop-filter: blur(10px);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        padding: 2rem 0;
+        gap: 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-links.nav-active {
+        right: 0;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger.toggle .line1 {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .burger.toggle .line2 {
+        opacity: 0;
+    }
+
+    .burger.toggle .line3 {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    /* Главный экран */
+    .hero h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* Статистика */
+    .stats-container {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item {
+        padding: 1.5rem;
+    }
+
+    /* Портфолио */
+    .portfolio-filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-btn {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Услуги */
+    .price-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 2rem;
+    }
+
+    /* Контакты */
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .info-item {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 1.5rem;
+    }
+}
+
+/* Маленькие мобильные устройства */
+@media screen and (max-width: 480px) {
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .portfolio-overlay h3 {
+        font-size: 1.2rem;
+    }
+
+    .portfolio-overlay p {
+        font-size: 0.9rem;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+    }
+
+    .price {
+        font-size: 1.8rem;
+    }
+
+    .info-item h3 {
+        font-size: 1.1rem;
+    }
+
+    input, textarea {
+        padding: 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Высокие экраны */
+@media screen and (min-height: 1000px) {
+    .hero {
+        padding-top: 15vh;
+    }
+}
+
+/* Ландшафтная ориентация на мобильных */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+    .hero {
+        padding-top: 100px;
+    }
+
+    .scroll-indicator {
+        display: none;
+    }
+
+    .nav-links {
+        padding: 1rem 0;
+    }
+}
+
+/* Поддержка тёмной темы системы */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-dark: #0f172a;
+        --bg-light: #1e293b;
+    }
+}
+
+/* Поддержка уменьшенного движения */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
