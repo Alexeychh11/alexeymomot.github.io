@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Алексей Момот - Видеооператор и режиссер монтажа</title>
+    <!-- Стили -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Анимации -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <!-- Иконки -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Курсор -->
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+</head>
+<body>
+    <!-- Меню -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Алексей Момот</h1>
+                <p>Видеооператор | Режиссер монтажа</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Главная</a></li>
+                <li><a href="#portfolio">Портфолио</a></li>
+                <li><a href="#prices">Услуги</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Главный экран -->
+    <section id="home">
+        <div class="hero" data-aos="fade-up">
+            <h2>Создаю визуальные истории</h2>
+            <p>Профессиональная видеосъемка и монтаж для вашего проекта</p>
+            <div class="cta-buttons">
+                <a href="#portfolio" class="button primary">
+                    <i class="fas fa-play"></i> Смотреть работы
+                </a>
+                <a href="#contact" class="button secondary">
+                    <i class="fas fa-envelope"></i> Связаться
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+            <span>Прокрутите вниз</span>
+        </div>
+    </section>
+
+    <!-- Статистика -->
+    <section class="stats-section">
+        <div class="section-container">
+            <div class="stats-container">
+                <div class="stat-item" data-aos="fade-up">
+                    <i class="fas fa-video"></i>
+                    <h3 class="counter">150</h3>
+                    <p>Проектов</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-clock"></i>
+                    <h3 class="counter">5</h3>
+                    <p>Лет опыта</p>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-users"></i>
+                    <h3 class="counter">100</h3>
+                    <p>Довольных клиентов</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Портфолио -->
+    <section id="portfolio">
+        <div class="section-container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Мои работы</h2>
+                <p>Выберите категорию для просмотра проектов</p>
+            </div>
+            <div class="portfolio-filters" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">Все работы</button>
+                <button class="filter-btn" data-filter="commercial">Реклама</button>
+                <button class="filter-btn" data-filter="wedding">Свадьбы</button>
+                <button class="filter-btn" data-filter="documentary">Документальное</button>
+            </div>
+            <div class="portfolio-grid">
+                <!-- Рекламные проекты -->
+                <div class="portfolio-item" data-category="commercial" data-aos="fade-up">
+                    <div class="portfolio-content">
+                        <img src="images/commercial1.jpg" alt="Рекламный проект 1">
+                        <div class="portfolio-overlay">
+                            <h3>Рекламный ролик</h3>
+                            <p>Создание динамичного видео для бренда</p>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Свадебные проекты -->
+                <div class="portfolio-item" data-category="wedding" data-aos="fade-up">
+                    <div class="portfolio-content">
+                        <img src="images/wedding1.jpg" alt="Свадебный проект 1">
+                        <div class="portfolio-overlay">
+                            <h3>Свадебный клип</h3>
+                            <p>Романтическая история любви</p>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Документальные проекты -->
+                <div class="portfolio-item" data-category="documentary" data-aos="fade-up">
+                    <div class="portfolio-content">
+                        <img src="images/documentary1.jpg" alt="Документальный проект 1">
+                        <div class="portfolio-overlay">
+                            <h3>Документальный фильм</h3>
+                            <p>История, рассказанная через объектив</p>
+                            <a href="#" class="button">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Услуги -->
+    <section id="prices">
+        <div class="section-container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Услуги и цены</h2>
+                <p>Выберите подходящий пакет услуг для вашего проекта</p>
+            </div>
+            <div class="price-cards">
+                <div class="card" data-aos="fade-up">
+                    <h3>Базовый монтаж</h3>
+                    <span class="price">от 13 800 ₽</span>
+                    <ul>
+                        <li>Монтаж до 5 минут</li>
+                        <li>Цветокоррекция</li>
+                        <li>Титры и переходы</li>
+                        <li>2 правки</li>
+                    </ul>
+                    <button class="button">Заказать</button>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="100">
+                    <h3>Стандарт</h3>
+                    <span class="price">от 25 000 ₽</span>
+                    <ul>
+                        <li>Монтаж до 15 минут</li>
+                        <li>Цветокоррекция</li>
+                        <li>Сложные переходы</li>
+                        <li>3D титры</li>
+                        <li>3 правки</li>
+                    </ul>
+                    <button class="button">Заказать</button>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Премиум</h3>
+                    <span class="price">от 45 000 ₽</span>
+                    <ul>
+                        <li>Монтаж любой сложности</li>
+                        <li>Профессиональная цветокоррекция</li>
+                        <li>Анимация и спецэффекты</li>
+                        <li>Саунд-дизайн</li>
+                        <li>Неограниченные правки</li>
+                    </ul>
+                    <button class="button">Заказать</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contact">
+        <div class="section-container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Связаться со мной</h2>
+                <p>Оставьте заявку, и я свяжусь с вами в ближайшее время</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Телефон</h3>
+                            <p>+7 (999) 123-45-67</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>contact@alexeymomot.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Адрес</h3>
+                            <p>Москва, Россия</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-vimeo-v"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" data-aos="fade-left">
+                    <div class="form-group">
+                        <input type="text" placeholder="Ваше имя" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Сообщение" required></textarea>
+                    </div>
+                    <button type="submit" class="button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Алексей Момот. Все права защищены</p>
+    </footer>
+
+    <!-- Скрипты -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://unpkg.com/kursor"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        // Инициализация анимаций
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Кастомный курсор
+        new kursor({
+            type: 1,
+            removeDefaultCursor: true,
+            color: 'rgba(192, 132, 252, .5)'
+        });
+
+        // Мобильное меню
+        const burger = document.querySelector('.burger');
+        const nav = document.querySelector('.nav-links');
+        const navLinks = document.querySelectorAll('.nav-links li');
+
+        burger.addEventListener('click', () => {
+            nav.classList.toggle('nav-active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>
